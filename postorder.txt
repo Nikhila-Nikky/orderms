@@ -1,0 +1,30 @@
+ORDER
+--------------------
+GET ORDER BY ID-->GET
+http://localhost:8200/api/orders/{orderid}
+
+
+GET ORDERS-->GET
+http://localhost:8200/api/orders
+
+
+PLACING ORDER-->POST
+http://localhost:8400/orders/placeorders
+{
+"address":"KUPT",
+"buyerid":"B101"
+}
+
+REORDER-->POST
+http://localhost:8200/orders/reorder/1/1
+
+{
+   "orderid":1
+}
+
+PRODUCTSORDERED BY PRODID-->GET
+
+http://localhost:8200/api/productsorders/P101
+
+DELETE ORDER->DELETE
+http://localhost:8200/order/2
